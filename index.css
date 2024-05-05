@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root{
+  --main-color: white;
+  --alt-color: rgb(239, 239, 239);
+}
+
+#header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--main-color);
+}
+
+.title, .login{
+  height: 30%;
+  margin: 5%;
+}
+
+.title{
+  font-family: 'Jaro';
+  font-size: 300%;
+}
+
+.login, .add-book{
+  font-family: 'Montserrat';
+  border-radius: 20%;
+  align-content: center;
+  border: 0.1rem solid black;
+}
+
+.add-book{
+  width: 10%;
+  height: 10%;
+  font-size: 1rem;
+  margin-top: 2%;
+}
+
+.subtitle{
+  font-family: 'Montserrat';
+  font-weight: 900;
+}
+
+/*beginning of body*/
+
+#main{
+  height: 85vh;
+  background-color: var(--alt-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+dialog{
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flexbox;
+  align-content: center;
+}
+
+#add{
+  display:flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+#add input{
+  margin-top: 10%;
+  border: 0.1rem solid black;
+  font-family: "Montserrat";
+}
+
+label{
+  font-family: "Montserrat";
+}
+
+.submit{
+  margin: 0.5rem;
+  padding: 0.2rem;
+  background-color: rgb(23, 244, 23);
+}
+
+.cancel{
+  margin: 0.5rem;
+  padding: 0.2rem;
+  background-color: rgb(255, 123, 123);
+}
+
+.library{
+  width: 100vw;
+  height: calc(0.9, 85vh);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns with equal width */
+  grid-auto-rows: auto; /* Automatically adjust the height of rows */
+  gap: 10%; /* Optional gap between grid items */
+}
+
+.book{
+  background-color: aliceblue;
+  border: 0.1rem solid #000000;
+  margin: 10%;
+  height: 150%;
+
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat";
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* .book button{
+} */
+
+#removeBtn{
+  font-family: "Montserrat";
+}
